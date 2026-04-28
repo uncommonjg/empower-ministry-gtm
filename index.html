@@ -633,7 +633,7 @@
       border-radius: 2px;
     }
 
-    /* ── RESPONSIVE ── */
+    /* ── RESPONSIVE: TABLET ── */
     @media (max-width: 900px) {
       nav { padding: 0 24px; }
       .cover { padding: 100px 32px 60px; }
@@ -650,6 +650,99 @@
       .parallel-header-row, .parallel-row { grid-template-columns: 1fr; }
       .closing { padding: 80px 32px; }
       .cover-meta { flex-wrap: wrap; gap: 24px; }
+    }
+
+    /* ── RESPONSIVE: IPHONE ── */
+    @media (max-width: 480px) {
+      nav { padding: 0 16px; height: 48px; }
+      nav .brand { font-size: 13px; }
+      nav .section-label { display: none; }
+
+      .cover { padding: 80px 20px 48px; }
+      .cover h1 { font-size: 36px; }
+      .cover-tagline { font-size: 16px; margin-bottom: 40px; }
+      .cover-overline { margin-bottom: 20px; }
+      .cover-meta { flex-direction: column; gap: 16px; }
+
+      .section { padding: 56px 20px; }
+      .section-alt .section-inner { padding: 56px 20px; }
+
+      h2 { font-size: 26px; margin-bottom: 22px; }
+
+      .pull { padding: 16px 20px; }
+      .pull p { font-size: 16px; }
+
+      .callout { padding: 22px 20px; }
+      .dark-box { padding: 28px 22px; }
+      .dark-box h3 { font-size: 18px; }
+
+      .card { padding: 22px 18px; }
+      .card h4 { font-size: 16px; }
+
+      /* Tables: horizontal scroll on mobile */
+      .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      table { min-width: 480px; }
+
+      /* Parallel table: stack vertically */
+      .parallel-header-row { display: none; }
+      .parallel-row {
+        display: block;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+        padding: 4px 0;
+      }
+      .parallel-cell {
+        display: block;
+        padding: 10px 16px;
+        font-size: 13px;
+      }
+      .parallel-cell:first-child {
+        background: var(--dark);
+        color: rgba(255,255,255,0.5);
+        font-size: 11px;
+        border-right: none;
+        border-bottom: none;
+        padding-bottom: 4px;
+      }
+
+      /* Flywheel */
+      .flywheel { padding: 24px 18px; }
+      .flywheel-row { gap: 12px; }
+      .flywheel-desc { padding-top: 8px; font-size: 13px; }
+
+      /* Phases */
+      .phase-item { gap: 12px; }
+      .phase-tag { font-size: 9px; padding: 8px 10px; }
+      .phase-body h4 { font-size: 14px; }
+      .phase-body p { font-size: 13px; }
+
+      /* Win list */
+      .win-item { gap: 16px; }
+      .win-num { width: 32px; height: 32px; font-size: 13px; }
+      .win-body h4 { font-size: 14px; }
+      .win-body p { font-size: 13px; }
+
+      /* Metric cards */
+      .metric-card { padding: 20px; }
+      .metric-card li { font-size: 13px; }
+
+      /* Team cards */
+      .team-card { padding: 18px; }
+
+      /* Philosophy */
+      .phil-card { padding: 20px 18px; }
+
+      /* Closing */
+      .closing { padding: 72px 20px; }
+      .closing h2 { font-size: 22px; }
+      .closing p { font-size: 14px; }
+      .closing-tagline { font-size: 16px; margin-top: 40px; }
+
+      /* General list items */
+      li { font-size: 14px; }
+      p { font-size: 14.5px; }
+
+      /* Section divider */
+      .section-divider { margin-bottom: 22px; }
     }
   </style>
 </head>
@@ -1370,11 +1463,10 @@
 <footer class="closing" id="closing">
   <div class="closing-inner">
     <div class="closing-overline reveal">Why I'm Here</div>
-    <h2 class="reveal reveal-delay-1">I built this plan because I believe in what Empower Ministry is building — and because this role is exactly the intersection of the work I've spent years getting ready to do.</h2>
+    <h2 class="reveal reveal-delay-1">This work has been years in the making — and I believe God has been preparing me for exactly this kind of mission.</h2>
     <p class="reveal reveal-delay-2">The financial foundation is there. The partnerships are active. The calendar is set. The vision is clear.</p>
     <p class="reveal reveal-delay-2">What this mission needs now is a marketing leader who can architect the brand, build the content engine, grow a community, activate the partner network, and operate at the speed of trust in a space that doesn't move on transaction timelines. Someone who understands that in the church world, the relationship is the product — and that the best systems are the ones that honor that truth while still producing results that compound.</p>
-    <p class="reveal reveal-delay-3"><strong>I'm not here to manage a marketing function. I'm here to build something that matters — and that keeps building long after the first campaign ships.</strong></p>
-    <p class="cta-line reveal reveal-delay-3">I'd welcome the conversation about what this could look like together.</p>
+    <p class="reveal reveal-delay-3"><strong>This role isn't here to manage a function — it's here to build something that matters over the next decade.</strong></p>
     <div class="closing-tagline reveal">"A Ministry to Ministers"</div>
   </div>
 </footer>
